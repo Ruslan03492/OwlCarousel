@@ -1188,7 +1188,7 @@ if (typeof Object.create !== "function") {
                 $item.data("owl-loaded", "loaded").removeClass("loading");
                 $lazyImg.removeAttr("data-src");
                 if (base.options.lazyEffect === "fade") {
-                    $lazyImg.fadeIn(400);
+                    $lazyImg.fadeIn(base.options.lazyEffectSpeed);
                 } else {
                     $lazyImg.show();
                 }
@@ -1491,6 +1491,7 @@ if (typeof Object.create !== "function") {
         lazyLoad : false,
         lazyFollow : true,
         lazyEffect : "fade",
+        lazyEffectSpeed : 400,
 
         autoHeight : false,
 
